@@ -11,7 +11,7 @@
 
         $scope.checkIfTooMuch = function(lunchMenu) {
             if (lunchMenu == null || /\S+/.test(lunchMenu) == false) {
-                showMessage('You had nothing to eat since you entered no data so that\'s ok!!!');
+                showMessage('Please enter data first');
                 return;
             }
             var itemsCount = lunchMenu.split(/\,/).length;
